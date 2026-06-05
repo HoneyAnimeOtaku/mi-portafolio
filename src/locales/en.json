@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "projects": "PROJECTS",
+    "experience": "EXPERIENCE",
+    "certifications": "CERTIFICATIONS",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "prompt": "$ whoami --verbose",
+    "subtitle": "PHYSICS · MATHEMATICS · CRYPTOGRAPHY · AI · CYBERSECURITY",
+    "institution": "IPN — School of Physics and Mathematics (ESFM)",
+    "description": "I research at the intersection of post-quantum cryptography, artificial intelligence, and cybersecurity. Mathematical physicist by training, software engineer by vocation.",
+    "available": "immediately available"
+  },
+  "pills": {
+    "crypto": "Post-quantum cryptography",
+    "security": "Cybersecurity",
+    "physics": "Quantum physics",
+    "dev": "Software Dev"
+  },
+  "projects": {
+  "soon": "COMING SOON",
+  "p1": { "desc": "Project developed during undergrad at ESFM — IPN. Foundation for future research in applied cryptography." },
+  "p2": { "title": "Post-quantum protocol", "desc": "Quantum-resistant scheme based on lattice cryptography." },
+  "p3": { "title": "AI in cybersecurity", "desc": "Network anomaly detection using deep learning models." },
+  "p4": { "title": "Secure cloud infrastructure", "desc": "Zero-trust architecture with end-to-end encryption." }
+},
+"experience": {
+  "e1": {
+    "role": "Cryptography Researcher — Social Service",
+    "date": "2024 · Mexico City",
+    "desc": "Development of cryptographic protocols and mathematical analysis of encryption schemes. Interdisciplinary research between mathematical physics and computer science."
+  },
+  "e2": {
+    "role": "▶ Seeking first formal position",
+    "org": "Open to research · industry · academia",
+    "date": "2025 · immediately available",
+    "desc": "Roles of interest: security engineer, applied researcher, data scientist, academic position in cryptography or AI."
+  }
+},
+"certs": {
+  "more":       { "title": "More certifications", "org": "See diplomas & images", "year": "Coming soon" },
+  "inprogress": { "title": "Certifications in progress", "org": "In progress" },
+  "degree":     { "title": "B.Sc. in Mathematical Physics" },
+  "note": "▸ Diplomas and certificates available as PDF and images in the full site.",
+  "clickhint": "Click to view all diplomas and certificates in PDF"
+},
+"skills": {
+  "languages": "LANGUAGES",
+  "crypto":    "CRYPTOGRAPHY",
+  "math":      "MATHEMATICS",
+  "security":  "SECURITY",
+  "linear":    "Linear algebra",
+  "groups":    "Group theory",
+  "calculus":  "Calculus"
+},
+"contact": {
+  "title": "CONTACT",
+  "sub": "Open to collaborations, research and job opportunities"
+},
+"games": {
+  "title": "GAMES",
+  "dino": "🦕 Dinosaur",
+  "go": "⚪ Go",
+  "chess": "♞ Chess",
+  "dino_desc": "Game in development — coming soon",
+  "dino_code": "// TODO: implement jump physics",
+  "go_desc": "Go board in development",
+  "go_code": "// TODO: implement capture rules",
+  "chess_desc": "Chess engine in development",
+  "chess_code": "// TODO: implement legal moves"
+},
+"sections": {
+  "projects": "PROJECTS",
+  "experience": "EXPERIENCE",
+  "certifications": "CERTIFICATIONS & DIPLOMAS",
+  "skills": "TECHNICAL SKILLS",
+  "contact": "CONTACT"
+}
+}

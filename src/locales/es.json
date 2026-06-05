@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "projects": "PROYECTOS",
+    "experience": "EXPERIENCIA",
+    "certifications": "CERTIFICACIONES",
+    "contact": "CONTACTO"
+  },
+  "hero": {
+    "prompt": "$ whoami --verbose",
+    "subtitle": "FÍSICA · MATEMÁTICA · CRIPTOGRAFÍA · IA · CIBERSEGURIDAD",
+    "institution": "IPN — Escuela Superior de Física y Matemáticas (ESFM)",
+    "description": "Investigo en la intersección de la criptografía post-cuántica, la inteligencia artificial y la ciberseguridad. Física matemática de formación, ingeniera de software por vocación.",
+    "available": "disponible inmediatamente"
+  },
+  "pills": {
+    "crypto": "Criptografía post-cuántica",
+    "security": "Ciberseguridad",
+    "physics": "Física cuántica",
+    "dev": "Dev Software"
+  },
+  "projects": {
+  "soon": "PRÓXIMO",
+  "p1": { "desc": "Proyecto desarrollado durante la licenciatura en la ESFM — IPN. Base para futuras investigaciones en criptografía aplicada." },
+  "p2": { "title": "Protocolo post-cuántico", "desc": "Esquema resistente a ataques cuánticos basado en retículas." },
+  "p3": { "title": "IA en ciberseguridad", "desc": "Detección de anomalías en redes con modelos de aprendizaje profundo." },
+  "p4": { "title": "Infraestructura segura en cloud", "desc": "Arquitectura zero-trust con cifrado end-to-end." }
+},
+"experience": {
+  "e1": {
+    "role": "Investigadora en Criptografía — Servicio Social",
+    "date": "2024 · Ciudad de México",
+    "desc": "Desarrollo de protocolos criptográficos y análisis matemático de esquemas de cifrado. Investigación interdisciplinaria entre física matemática y ciencias computacionales."
+  },
+  "e2": {
+    "role": "▶ Buscando primera oportunidad formal",
+    "org": "Abierta a investigación · industria · academia",
+    "date": "2025 · disponible inmediatamente",
+    "desc": "Roles de interés: ingeniera de seguridad, investigadora aplicada, científica de datos, posición académica en criptografía o IA."
+  }
+},
+"certs": {
+  "more":       { "title": "Más certificaciones", "org": "Ver diplomas e imágenes", "year": "Próximamente" },
+  "inprogress": { "title": "Certificaciones en curso", "org": "En progreso" },
+  "degree":     { "title": "Lic. en Física Matemática" },
+  "note": "▸ Diplomas y certificados disponibles en PDF e imagen en la versión completa del sitio.",
+  "clickhint": "Haz clic para ver todos los diplomas y certificados en PDF"
+},
+"skills": {
+  "languages": "LENGUAJES",
+  "crypto":    "CRIPTOGRAFÍA",
+  "math":      "MATEMÁTICAS",
+  "security":  "SEGURIDAD",
+  "linear":    "Álgebra lineal",
+  "groups":    "T. de grupos",
+  "calculus":  "Cálculo"
+},
+"contact": {
+  "title": "CONTACTO",
+  "sub": "Abierta a colaboraciones, investigación y oportunidades laborales"
+},
+"games": {
+  "title": "JUEGOS",
+  "dino": "🦕 Dinosaurio",
+  "go": "⚪ Go",
+  "chess": "♞ Ajedrez",
+  "dino_desc": "Juego en desarrollo — próximamente disponible",
+  "dino_code": "// TODO: implementar física del salto",
+  "go_desc": "Tablero de Go en desarrollo",
+  "go_code": "// TODO: implementar reglas de captura",
+  "chess_desc": "Motor de ajedrez en desarrollo",
+  "chess_code": "// TODO: implementar movimientos legales"
+},
+"sections": {
+  "projects": "PROYECTOS",
+  "experience": "EXPERIENCIA",
+  "certifications": "CERTIFICACIONES & DIPLOMAS",
+  "skills": "HABILIDADES TÉCNICAS",
+  "contact": "CONTACTO"
+}
+}
