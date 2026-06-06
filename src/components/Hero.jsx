@@ -10,7 +10,7 @@ function Hero() {
         <div style={styles.prompt}>{t('hero.prompt')}</div>
 
         <h1 style={styles.h1}>
-          Honey <span style={styles.pk}>Leticia</span>
+         Lic. Honey <span style={styles.pk}>Leticia</span>
           <br />
           <span style={styles.g}>Maldonado</span>{' '}
           <span style={styles.p}>Domínguez</span>
@@ -35,7 +35,7 @@ function Hero() {
         <div style={styles.avatarFrame}>
           <img
             src="/foto-perfil.jpg"
-            alt="Honey Maldonado"
+            alt="HoneyAnimeOtaku"
             style={styles.avatarImg}
             onError={(e) => {
               e.target.style.display = 'none'
@@ -43,7 +43,7 @@ function Hero() {
           />
           <div style={styles.avatarFallback}>HM</div>
         </div>
-        <p style={styles.avatarName}>Honey Maldonado</p>
+        <p style={styles.avatarName}>HoneyAnimeOtaku</p>
         <p style={styles.avatarLogo}>◈ HM_SYS</p>
       </div>
 
