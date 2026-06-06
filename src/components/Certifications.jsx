@@ -6,9 +6,9 @@ function Certifications() {
   const navigate = useNavigate()
 
   const certs = [
-    { title: 'CCST Cybersecurity', org: 'Cisco', year: '2024', color: '#00ff9f', icon: '🛡️' },
-    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: '2026', color: '#00c3ff', icon: '🎓' },
     { title: 'Voluntaria IEEE SSCI', org: 'IEEE', year: '2023', color: '#ff2d9b', icon: '🏅' },
+    { title: 'CCST Cybersecurity', org: 'Cisco', year: '2024', color: '#00ff9f', icon: '🛡️' },
+    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: '2024', color: '#00c3ff', icon: '🎓' },
     { title: 'Ingeniería de Software', org: 'Escuela de Código CDMX', year: '2026', color: '#c800ff', icon: '💻' },
     { title: 'Control de Versiones GIT', org: 'Agencia Digital CDMX', year: '2026', color: '#00ff9f', icon: '🔧' },
     { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2025', color: '#ff2d9b', icon: '⏳', dashed: true },

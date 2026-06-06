@@ -17,7 +17,7 @@ function CertificationsPage() {
     {
       title: 'Lic. en Física y Matemáticas',
       org: 'IPN — Escuela Superior de Física y Matemáticas',
-      year: 'Febrero 2026',
+      year: 'Diciembre 2024',
       color: '#00c3ff',
       icon: '🎓',
       file: '/certs/certificado-esfm-ipn.pdf',
@@ -25,7 +25,7 @@ function CertificationsPage() {
     {
       title: 'Carta de Pasante',
       org: 'Instituto Politécnico Nacional',
-      year: 'Febrero 2026',
+      year: 'Diciembre 2024',
       color: '#c800ff',
       icon: '📜',
       file: '/certs/carta-pasante-ipn.pdf',
