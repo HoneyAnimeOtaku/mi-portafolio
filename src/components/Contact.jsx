@@ -4,10 +4,10 @@ function Contact() {
   const { t } = useTranslation()
 
   const links = [
-    { label: 'GitHub',         href: 'https://github.com/honeymaldonado', color: '#00ff9f' },
-    { label: 'LinkedIn',       href: 'https://linkedin.com/in/honeymaldonado', color: '#00c3ff' },
+    { label: 'GitHub',         href: 'https://github.com/HoneyAnimeOtaku', color: '#00ff9f' },
+    { label: 'LinkedIn',       href: 'https://linkedin.com/in/honey-maldonado', color: '#00c3ff' },
     { label: 'Google Scholar', href: '#', color: '#c800ff' },
-    { label: 'Email',          href: 'mailto:tuemail@dominio.com', color: '#ff2d9b' },
+    { label: 'Email',          href: 'hmaldonadod1700@alumno.ipn.mx', color: '#ff2d9b' },
   ]
 
   return (
