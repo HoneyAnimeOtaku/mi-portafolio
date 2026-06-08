@@ -10,7 +10,7 @@ function Hero() {
         <div style={styles.prompt}>{t('hero.prompt')}</div>
 
         <h1 style={styles.h1}>
-         Lic. Honey <span style={styles.pk}>Leticia</span>
+          Honey <span style={styles.pk}>Leticia</span>
           <br />
           <span style={styles.g}>Maldonado</span>{' '}
           <span style={styles.p}>Domínguez</span>
@@ -35,7 +35,7 @@ function Hero() {
         <div style={styles.avatarFrame}>
           <img
             src="/foto-perfil.jpeg"
-            alt="HoneyAnimeOtaku"
+            alt="Honey Maldonado"
             style={styles.avatarImg}
             onError={(e) => {
               e.target.style.display = 'none'
@@ -43,7 +43,7 @@ function Hero() {
           />
           <div style={styles.avatarFallback}>HM</div>
         </div>
-        <p style={styles.avatarName}>HoneyAnimeOtaku</p>
+        <p style={styles.avatarName}>Honey Maldonado</p>
         <p style={styles.avatarLogo}>◈ HM_SYS</p>
       </div>
 
@@ -57,7 +57,7 @@ const styles = {
     borderBottom: '1px solid #150020',
     display: 'grid',
     gridTemplateColumns: '1fr auto',
-    gap: '1.5rem',
+    gap: '0.5rem',
     alignItems: 'start',
     fontFamily: "'Share Tech Mono', monospace",
   },
@@ -65,7 +65,7 @@ const styles = {
     maxWidth: '520px',
   },
   prompt: {
-    fontSize: '17px',
+    fontSize: '13px',
     color: '#ff2d9b',
     marginBottom: '0.6rem',
   },
@@ -82,19 +82,19 @@ const styles = {
   pk: { color: '#ff2d9b' },
   b:  { color: '#00c3ff' },
   subtitle: {
-    fontSize: '16px',
+    fontSize: '13px',
     color: '#c800ff',
     letterSpacing: '0.06em',
     margin: '0.5rem 0 0.4rem',
   },
   institution: {
-    fontSize: '16px',
+    fontSize: '13px',
     color: '#00c3ff',
     marginBottom: '0.8rem',
     letterSpacing: '0.04em',
   },
   desc: {
-    fontSize: '17px',
+    fontSize: '14px',
     color: '#8a7a9a',
     lineHeight: '1.8',
   },
@@ -105,7 +105,7 @@ const styles = {
     marginTop: '1rem',
   },
   pill: {
-    fontSize: '15px',
+    fontSize: '12px',
     padding: '3px 8px',
     borderRadius: '2px',
     border: '1px solid',
@@ -122,8 +122,8 @@ const styles = {
     flexShrink: '0',
   },
   avatarFrame: {
-    width: '180px',
-    height: '220px',
+    width: '160px',
+    height: '200px',
     borderRadius: '8px',
     border: '1px solid #c800ff',
     background: '#0d0018',
@@ -149,14 +149,14 @@ const styles = {
   },
   avatarName: {
     fontFamily: "'Orbitron', monospace",
-    fontSize: '16px',
+    fontSize: '13px',
     fontWeight: '700',
     color: '#fff',
     margin: '0',
     textAlign: 'center',
   },
   avatarLogo: {
-    fontSize: '16px',
+    fontSize: '13px',
     color: '#c800ff',
     margin: '0',
     textAlign: 'center',
