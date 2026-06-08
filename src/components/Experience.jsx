@@ -3,10 +3,10 @@ import { useTranslation } from 'react-i18next'
 function Experience() {
   const { t } = useTranslation()
 
-  const experiences = [
-    { key: 'e1', dotColor: '#00ff9f', roleColor: '#00ff9f', showLine: true },
-    { key: 'e2', dotColor: '#c800ff', roleColor: '#c800ff', showLine: true },
-    { key: 'e3', dotColor: '#ff2d9b', roleColor: '#ff2d9b', showLine: false },
+const experiences = [
+    { key: 'e1', dotColor: '#ff2d9b', roleColor: '#ff2d9b', orgColor: '#ff2d9b', showLine: true },
+    { key: 'e2', dotColor: '#c800ff', roleColor: '#c800ff', orgColor: '#c800ff', showLine: true },
+    { key: 'e3', dotColor: '#00ff9f', roleColor: '#00ff9f', orgColor: '#00ff9f', showLine: false },
   ]
 
   return (
