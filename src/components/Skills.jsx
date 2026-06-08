@@ -7,7 +7,7 @@ function Skills() {
     {
       label: t('skills.languages'),
       color: '#00ff9f',
-      items: ['Python', 'C++', 'Rust', 'Julia'],
+      items: ['Python', 'C++', 'C', 'C#', 'Java','Rust', 'Julia', 'HTML', 'CSS', 'JavaScript', 'SQL'],
     },
     {
       label: t('skills.crypto'),
@@ -17,12 +17,12 @@ function Skills() {
     {
       label: 'IA / ML',
       color: '#ff2d9b',
-      items: ['PyTorch', 'TensorFlow', 'JAX', 'Scikit-learn'],
+      items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'MatpLotlib'],
     },
     {
       label: 'Cloud & DevOps',
       color: '#00c3ff',
-      items: ['AWS', 'GCP', 'Docker', 'Kubernetes'],
+      items: ['AWS', 'Docker', 'Kubernetes'],
     },
     {
       label: t('skills.math'),
