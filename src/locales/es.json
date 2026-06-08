@@ -27,14 +27,16 @@
 },
 "experience": {
   "e1": {
-    "role": "Investigadora en Procesamiento de Lenguaje Natural — Servicio Social",
-    "date": "2024 · Ciudad de México",
-    "desc": "Apoyo en proyectos de NLP mediante preprocesamiento de datos, análisis exploratorio, preparación de datasets, evaluación de modelos de machine learning y documentación de experimentos."
+    "role": "Analista de IA (Freelance)",
+    "org": "Outlier",
+    "date": "2025 · Actualidad",
+    "desc": "Especializada en evaluación y optimización de modelos de IA y LLMs, realizando análisis de errores, adversarial testing, prompt engineering y validación de sistemas multimodales para mejorar métricas de calidad y robustez."
   },
   "e2": {
-    "role": "Analista de IA (Freelance)",
-    "date": "2025 · Actuaidad",
-    "desc": "Especializado en evaluación y optimización de modelos de IA y LLMs, realizando análisis de errores, adversarial testing, prompt engineering y validación de sistemas multimodales para mejorar métricas de calidad y robustez."
+    "role": "Investigadora en Procesamiento de Lenguaje Natural — Servicio Social",
+    "org": "IPN — Centro de Investigación en Computación (CIC)",
+    "date": "2024 · Ciudad de México",
+    "desc": "Apoyo en proyectos de NLP mediante preprocesamiento de datos, análisis exploratorio, preparación de datasets, evaluación de modelos de machine learning y documentación de experimentos."
   },
   "e3": {
     "role": "▶ Buscando primera oportunidad formal",

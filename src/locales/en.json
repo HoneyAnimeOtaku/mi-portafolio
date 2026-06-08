@@ -27,14 +27,16 @@
 },
 "experience": {
   "e1": {
-    "role": "Natural Language Processing Research Assistant — Social Service Program",
-    "date": "2024 · Mexico City",
-    "desc": "Contributed to NLP projects by performing data preprocessing, exploratory data analysis, dataset preparation, machine learning model evaluation, and experiment documentation."
+    "role": "AI Analyst (Freelance)",
+    "org": "Independent",
+    "date": "2025 · Present",
+    "desc": "Specialized in evaluation and optimization of AI models and LLMs, performing error analysis, adversarial testing, prompt engineering and multimodal system validation to improve quality and robustness metrics."
   },
   "e2": {
-    "role": "Freelance AI Analyst",
-    "date": "2025 · Present",
-    "desc": "Specialized in the evaluation and optimization of AI models and LLMs, conducting error analysis, adversarial testing, prompt engineering, and multimodal system validation to improve quality metrics, robustness, and overall performance."
+    "role": "Natural Language Processing Researcher — Social Service",
+    "org": "IPN — Center for Computing Research (CIC)",
+    "date": "2024 · Mexico City",
+    "desc": "Support in NLP projects through data preprocessing, exploratory analysis, dataset preparation, machine learning model evaluation and experiment documentation."
   },
   "e3": {
     "role": "▶ Seeking first formal position",

@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next'
 function Experience() {
   const { t } = useTranslation()
 
+  const experiences = [
+    { key: 'e1', dotColor: '#00ff9f', roleColor: '#00ff9f', showLine: true },
+    { key: 'e2', dotColor: '#c800ff', roleColor: '#c800ff', showLine: true },
+    { key: 'e3', dotColor: '#ff2d9b', roleColor: '#ff2d9b', showLine: false },
+  ]
+
   return (
     <section id="experiencia" style={styles.section}>
 
@@ -13,33 +19,34 @@ function Experience() {
       </div>
 
       <div style={styles.list}>
-
-        <div style={styles.item}>
-          <div style={styles.dotCol}>
-            <div style={{ ...styles.dot, borderColor: '#00ff9f', boxShadow: '0 0 6px #00ff9f55' }}></div>
-            <div style={styles.lineV}></div>
+        {experiences.map((exp) => (
+          <div key={exp.key} style={styles.item}>
+            <div style={styles.dotCol}>
+              <div style={{
+                ...styles.dot,
+                borderColor: exp.dotColor,
+                boxShadow: `0 0 6px ${exp.dotColor}55`,
+              }}></div>
+              {exp.showLine && <div style={styles.lineV}></div>}
+            </div>
+            <div>
+              <p style={{ ...styles.role, color: exp.roleColor }}>
+                {t(`experience.${exp.key}.role`)}
+              </p>
+              <p style={styles.org}>
+                {t(`experience.${exp.key}.org`)}
+              </p>
+              <p style={styles.date}>
+                {t(`experience.${exp.key}.date`)}
+              </p>
+              <p style={styles.desc}>
+                {t(`experience.${exp.key}.desc`)}
+              </p>
+            </div>
           </div>
-          <div>
-            <p style={{ ...styles.role, color: '#00ff9f' }}>{t('experience.e1.role')}</p>
-            <p style={styles.org}>IPN — Escuela Superior de Física y Matemáticas (ESFM)</p>
-            <p style={styles.date}>{t('experience.e1.date')}</p>
-            <p style={styles.desc}>{t('experience.e1.desc')}</p>
-          </div>
-        </div>
-
-        <div style={styles.item}>
-          <div style={styles.dotCol}>
-            <div style={{ ...styles.dot, borderColor: '#ff2d9b', boxShadow: '0 0 6px #ff2d9b55' }}></div>
-          </div>
-          <div>
-            <p style={{ ...styles.role, color: '#ff2d9b' }}>{t('experience.e2.role')}</p>
-            <p style={{ ...styles.org, color: '#ff2d9b' }}>{t('experience.e2.org')}</p>
-            <p style={styles.date}>{t('experience.e2.date')}</p>
-            <p style={styles.desc}>{t('experience.e2.desc')}</p>
-          </div>
-        </div>
-
+        ))}
       </div>
+
     </section>
   )
 }
@@ -56,10 +63,10 @@ const styles = {
     gap: '8px',
     marginBottom: '1.2rem',
   },
-  secNum: { fontSize: '16px', color: '#ff2d9b' },
+  secNum: { fontSize: '13px', color: '#ff2d9b' },
   secTitle: {
     fontFamily: "'Orbitron', monospace",
-    fontSize: '17px',
+    fontSize: '13px',
     fontWeight: '700',
     letterSpacing: '0.1em',
     color: '#ff2d9b',
@@ -87,10 +94,10 @@ const styles = {
     background: '#200030',
     margin: '4px 0',
   },
-  role: { fontSize: '15px', margin: '0 0 2px' },
-  org:  { fontSize: '17px', color: '#c800ff', margin: '0 0 2px' },
-  date: { fontSize: '16px', color: '#5a4a6a', margin: '0 0 4px' },
-  desc: { fontSize: '17px', color: '#5a4a6a', margin: '0', lineHeight: '1.5' },
+  role: { fontSize: '14px', margin: '0 0 2px' },
+  org:  { fontSize: '13px', color: '#c800ff', margin: '0 0 2px' },
+  date: { fontSize: '13px', color: '#5a4a6a', margin: '0 0 4px' },
+  desc: { fontSize: '13px', color: '#5a4a6a', margin: '0', lineHeight: '1.5' },
 }
 
 export default Experience
