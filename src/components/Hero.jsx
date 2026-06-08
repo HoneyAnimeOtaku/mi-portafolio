@@ -122,8 +122,8 @@ const styles = {
     flexShrink: '0',
   },
   avatarFrame: {
-    width: '200px',
-    height: '240px',
+    width: '240px',
+    height: '280px',
     borderRadius: '8px',
     border: '1px solid #c800ff',
     background: '#0d0018',
