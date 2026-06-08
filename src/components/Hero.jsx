@@ -10,10 +10,10 @@ function Hero() {
         <div style={styles.prompt}>{t('hero.prompt')}</div>
 
         <h1 style={styles.h1}>
-          Honey <span style={styles.pk}>Leticia</span>
+          <span style={styles.g}>Lic. Honey Leticia</span>
           <br />
           <span style={styles.g}>Maldonado</span>{' '}
-          <span style={styles.p}>Domínguez</span>
+          <span style={styles.g}>Domínguez</span>
         </h1>
 
         <div style={styles.subtitle}>{t('hero.subtitle')}</div>
