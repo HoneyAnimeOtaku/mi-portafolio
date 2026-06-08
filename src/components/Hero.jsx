@@ -41,7 +41,6 @@ function Hero() {
               e.target.style.display = 'none'
             }}
           />
-          <div style={styles.avatarFallback}>HM</div>
         </div>
         <p style={styles.avatarName}>Honey Maldonado</p>
         <p style={styles.avatarLogo}>◈ HM_SYS</p>
