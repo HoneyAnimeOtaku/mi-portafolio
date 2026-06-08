@@ -20,18 +20,23 @@
   },
   "projects": {
   "soon": "COMING SOON",
-  "p1": { "desc": "Project developed during undergrad at ESFM — IPN. Foundation for future research in applied cryptography." },
+  "p1": { "desc": "Project developed during my undergraduate studies at ESFM — IPN. Application for selecting an academic specialization within the degree program." },
   "p2": { "title": "Post-quantum protocol", "desc": "Quantum-resistant scheme based on lattice cryptography." },
   "p3": { "title": "AI in cybersecurity", "desc": "Network anomaly detection using deep learning models." },
   "p4": { "title": "Secure cloud infrastructure", "desc": "Zero-trust architecture with end-to-end encryption." }
 },
 "experience": {
   "e1": {
-    "role": "Cryptography Researcher — Social Service",
+    "role": "Natural Language Processing Research Assistant — Social Service Program",
     "date": "2024 · Mexico City",
-    "desc": "Development of cryptographic protocols and mathematical analysis of encryption schemes. Interdisciplinary research between mathematical physics and computer science."
+    "desc": "Contributed to NLP projects by performing data preprocessing, exploratory data analysis, dataset preparation, machine learning model evaluation, and experiment documentation."
   },
   "e2": {
+    "role": "Freelance AI Analyst",
+    "date": "2025 · Present",
+    "desc": "Specialized in the evaluation and optimization of AI models and LLMs, conducting error analysis, adversarial testing, prompt engineering, and multimodal system validation to improve quality metrics, robustness, and overall performance."
+  },
+  "e3": {
     "role": "▶ Seeking first formal position",
     "org": "Open to research · industry · academia",
     "date": "2025 · immediately available",

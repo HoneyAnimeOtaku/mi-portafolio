@@ -20,18 +20,23 @@
   },
   "projects": {
   "soon": "PRÓXIMO",
-  "p1": { "desc": "Proyecto desarrollado durante la licenciatura en la ESFM — IPN. Base para futuras investigaciones en criptografía aplicada." },
+  "p1": { "desc": "Proyecto desarrollado durante la licenciatura en la ESFM — IPN. Programa para elegir especialidad de la carrera" },
   "p2": { "title": "Protocolo post-cuántico", "desc": "Esquema resistente a ataques cuánticos basado en retículas." },
   "p3": { "title": "IA en ciberseguridad", "desc": "Detección de anomalías en redes con modelos de aprendizaje profundo." },
   "p4": { "title": "Infraestructura segura en cloud", "desc": "Arquitectura zero-trust con cifrado end-to-end." }
 },
 "experience": {
   "e1": {
-    "role": "Investigadora en Criptografía — Servicio Social",
+    "role": "Investigadora en Procesamiento de Lenguaje Natural — Servicio Social",
     "date": "2024 · Ciudad de México",
-    "desc": "Desarrollo de protocolos criptográficos y análisis matemático de esquemas de cifrado. Investigación interdisciplinaria entre física matemática y ciencias computacionales."
+    "desc": "Apoyo en proyectos de NLP mediante preprocesamiento de datos, análisis exploratorio, preparación de datasets, evaluación de modelos de machine learning y documentación de experimentos."
   },
   "e2": {
+    "role": "Analista de IA (Freelance)",
+    "date": "2025 · Actuaidad",
+    "desc": "Especializado en evaluación y optimización de modelos de IA y LLMs, realizando análisis de errores, adversarial testing, prompt engineering y validación de sistemas multimodales para mejorar métricas de calidad y robustez."
+  },
+  "e3": {
     "role": "▶ Buscando primera oportunidad formal",
     "org": "Abierta a investigación · industria · academia",
     "date": "2025 · disponible inmediatamente",
