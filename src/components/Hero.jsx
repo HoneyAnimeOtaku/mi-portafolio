@@ -34,7 +34,7 @@ function Hero() {
       <div style={styles.avatarContainer}>
         <div style={styles.avatarFrame}>
           <img
-            src="/foto-perfil.jpg"
+            src="/foto-perfil.jpeg"
             alt="HoneyAnimeOtaku"
             style={styles.avatarImg}
             onError={(e) => {
