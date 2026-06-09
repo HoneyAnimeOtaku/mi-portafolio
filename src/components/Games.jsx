@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import DinoGame from './games/DinoGame'
 
 function Games() {
   const { t } = useTranslation()
@@ -12,12 +13,6 @@ function Games() {
   ]
 
   const gameContent = {
-    dino: {
-      title: t('games.dino'),
-      color: '#00ff9f',
-      desc: t('games.dino_desc'),
-      code: t('games.dino_code'),
-    },
     go: {
       title: t('games.go'),
       color: '#c800ff',
@@ -31,8 +26,6 @@ function Games() {
       code: t('games.chess_code'),
     },
   }
-
-  const active = gameContent[activeGame]
 
   return (
     <section id="juegos" style={styles.section}>
@@ -61,13 +54,25 @@ function Games() {
       </div>
 
       <div style={styles.gameArea}>
-        <div style={styles.comingSoon}>
-          <p style={{ ...styles.comingTitle, color: active.color }}>
-            {active.title}
-          </p>
-          <p style={styles.comingDesc}>{active.desc}</p>
-          <p style={styles.comingCode}>{active.code}</p>
-        </div>
+        {activeGame === 'dino' && <DinoGame />}
+        {activeGame === 'go' && (
+          <div style={styles.comingSoon}>
+            <p style={{ ...styles.comingTitle, color: gameContent.go.color }}>
+              {gameContent.go.title}
+            </p>
+            <p style={styles.comingDesc}>{gameContent.go.desc}</p>
+            <p style={styles.comingCode}>{gameContent.go.code}</p>
+          </div>
+        )}
+        {activeGame === 'chess' && (
+          <div style={styles.comingSoon}>
+            <p style={{ ...styles.comingTitle, color: gameContent.chess.color }}>
+              {gameContent.chess.title}
+            </p>
+            <p style={styles.comingDesc}>{gameContent.chess.desc}</p>
+            <p style={styles.comingCode}>{gameContent.chess.code}</p>
+          </div>
+        )}
       </div>
 
     </section>
@@ -86,10 +91,10 @@ const styles = {
     gap: '8px',
     marginBottom: '1.2rem',
   },
-  secNum: { fontSize: '16px', color: '#ff2d9b' },
+  secNum: { fontSize: '13px', color: '#ff2d9b' },
   secTitle: {
     fontFamily: "'Orbitron', monospace",
-    fontSize: '17px',
+    fontSize: '11px',
     fontWeight: '700',
     letterSpacing: '0.1em',
     color: '#ff2d9b',
@@ -111,7 +116,7 @@ const styles = {
     borderRadius: '3px',
     background: 'transparent',
     cursor: 'pointer',
-    fontSize: '17px',
+    fontSize: '13px',
     fontFamily: "'Share Tech Mono', monospace",
     transition: 'all 0.2s',
   },
@@ -123,16 +128,17 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: '1rem',
   },
   comingSoon: { textAlign: 'center', padding: '2rem' },
   comingTitle: {
     fontFamily: "'Orbitron', monospace",
-    fontSize: '20px',
+    fontSize: '18px',
     fontWeight: '700',
     margin: '0 0 0.5rem',
   },
-  comingDesc: { fontSize: '15px', color: '#5a4a6a', margin: '0 0 0.5rem' },
-  comingCode: { fontSize: '17px', color: '#2a003a', margin: '0', fontStyle: 'italic' },
+  comingDesc: { fontSize: '13px', color: '#5a4a6a', margin: '0 0 0.5rem' },
+  comingCode: { fontSize: '11px', color: '#2a003a', margin: '0', fontStyle: 'italic' },
 }
 
 export default Games
