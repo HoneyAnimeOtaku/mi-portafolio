@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 function Experience() {
   const { t } = useTranslation()
 
-const experiences = [
+  const experiences = [
     { key: 'e1', dotColor: '#ff2d9b', roleColor: '#ff2d9b', orgColor: '#ff2d9b', showLine: true },
     { key: 'e2', dotColor: '#c800ff', roleColor: '#c800ff', orgColor: '#c800ff', showLine: true },
     { key: 'e3', dotColor: '#00ff9f', roleColor: '#00ff9f', orgColor: '#00ff9f', showLine: false },
@@ -33,7 +33,7 @@ const experiences = [
               <p style={{ ...styles.role, color: exp.roleColor }}>
                 {t(`experience.${exp.key}.role`)}
               </p>
-              <p style={styles.org}>
+              <p style={{ ...styles.org, color: exp.orgColor }}>
                 {t(`experience.${exp.key}.org`)}
               </p>
               <p style={styles.date}>
@@ -95,7 +95,7 @@ const styles = {
     margin: '4px 0',
   },
   role: { fontSize: '14px', margin: '0 0 2px' },
-  org:  { fontSize: '13px', color: '#c800ff', margin: '0 0 2px' },
+  org:  { fontSize: '13px', margin: '0 0 2px' },
   date: { fontSize: '13px', color: '#5a4a6a', margin: '0 0 4px' },
   desc: { fontSize: '13px', color: '#5a4a6a', margin: '0', lineHeight: '1.5' },
 }
