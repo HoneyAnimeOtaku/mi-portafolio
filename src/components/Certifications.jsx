@@ -6,12 +6,12 @@ function Certifications() {
   const navigate = useNavigate()
 
   const certs = [
-    { title: 'Voluntaria IEEE SSCI', org: 'IEEE', year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅' },
-    { title: 'CCST Cybersecurity', org: 'Cisco Certified Support Technician', year: 'Julio 2024', color: '#00ff9f', icon: '🛡️' },
-    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
-    { title: 'Ingeniería de Software', org: 'Escuela de Código CDMX', year: '2026', color: '#c800ff', icon: '💻' },
-    { title: 'Control de Versiones GIT', org: 'Agencia Digital CDMX', year: '2026', color: '#00ff9f', icon: '🔧' },
-    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2026', color: '#ff2d9b', icon: '⏳', dashed: true },
+    { key: 'ccst',    year: 'Julio 2024',     color: '#00ff9f', icon: '🛡️' },
+    { key: 'aws',     year: 'Julio 2026',     color: '#00c3ff', icon: '☁️' },
+    { key: 'lic',     year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
+    { key: 'ieee',    year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅' },
+    { key: 'mod1',    year: '2026',           color: '#c800ff', icon: '💻' },
+    { key: 'inprogress', year: '2026',        color: '#ff2d9b', icon: '⏳', dashed: true },
   ]
 
   return (
@@ -41,8 +41,16 @@ function Certifications() {
               }}
             >
               <div style={styles.icon}>{cert.icon}</div>
-              <p style={styles.certTitle}>{cert.title}</p>
-              <p style={{ ...styles.certOrg, color: cert.color }}>{cert.org}</p>
+              <p style={styles.certTitle}>
+                {cert.key === 'inprogress'
+                  ? t('certs.inprogress.title')
+                  : t(`certs.items.${cert.key}.title`)}
+              </p>
+              <p style={{ ...styles.certOrg, color: cert.color }}>
+                {cert.key === 'inprogress'
+                  ? t('certs.inprogress.org')
+                  : t(`certs.items.${cert.key}.org`)}
+              </p>
               <p style={styles.certYear}>{cert.year}</p>
             </div>
           ))}
