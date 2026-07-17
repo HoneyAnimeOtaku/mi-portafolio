@@ -12,7 +12,7 @@ function CertificationsPage() {
       year: 'Julio 2024',
       color: '#00ff9f',
       icon: '🛡️',
-      file: '/certs/ccst-cisco.pdf',
+      link: 'https://www.credly.com/badges/f86f7532-78c2-4746-9d72-929ee49946fe/public_url',
     },
     {
       title: 'Lic. en Física y Matemáticas',
