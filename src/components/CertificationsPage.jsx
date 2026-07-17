@@ -107,7 +107,7 @@ function CertificationsPage() {
             <p style={{ ...styles.certTitle, color: cert.color }}>{cert.title}</p>
             <p style={styles.certOrg}>{cert.org}</p>
             <a
-              href={cert.file}
+              href={cert.file || cert.link}
               target="_blank"
               rel="noreferrer"
               style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
