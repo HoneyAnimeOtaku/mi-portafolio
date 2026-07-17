@@ -9,7 +9,7 @@ function Projects() {
       tagStyle: 'g',
       title: 'esfmcialidad',
       descKey: 'projects.p1.desc',
-      link: 'https://github.com/honeymaldonado/esfmcialidad',
+      link: 'https://github.com/HoneyAnimeOtaku/ESFMCIALIDAD',
       future: false,
     },
     {
