@@ -6,12 +6,12 @@ function Certifications() {
   const navigate = useNavigate()
 
   const certs = [
-    { title: 'CCST Cybersecurity', org: 'Cisco', year: 'Julio 2024', color: '#00ff9f', icon: '🛡️' },
-    { title: 'AWS Cloud Practitioner', org: 'Amazon Web Services', year: 'Julio 2026', color: '#00c3ff', icon: '☁️' },
-    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
     { title: 'Voluntaria IEEE SSCI', org: 'IEEE', year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅' },
+    { title: 'CCST Cybersecurity', org: 'Cisco', year: 'Julio 2024', color: '#00ff9f', icon: '🛡️' },
+    { title: 'AWS Cloud Practitioner', org: 'Amazon Web Services', year: 'Julio 2026', color: '#00c3ff', icon: '☁️', file: null, credlyId: '587433a0-2c21-43bf-8cd2-70b43c663b2c',},
+    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
     { title: 'Ingeniería de Software', org: 'Escuela de Código CDMX', year: '2026', color: '#c800ff', icon: '💻' },
-    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2025', color: '#ff2d9b', icon: '⏳', dashed: true },
+    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2026', color: '#ff2d9b', icon: '⏳', dashed: true },
   ]
 
   return (
