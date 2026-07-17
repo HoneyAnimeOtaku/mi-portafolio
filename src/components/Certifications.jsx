@@ -1,256 +1,107 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
 
-function CertificationsPage() {
+function Certifications() {
   const { t } = useTranslation()
   const navigate = useNavigate()
 
-  // Carga el script de Credly una sola vez
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.src = '//cdn.credly.com/assets/utilities/embed.js'
-    script.async = true
-    document.body.appendChild(script)
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
-
   const certs = [
-    {
-      title: 'CCST Cybersecurity',
-      org: 'Cisco Certified Support Technician',
-      year: 'Julio 2024',
-      color: '#00ff9f',
-      icon: '🛡️',
-      file: '/certs/ccst-cisco.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'AWS Cloud Practitioner',
-      org: 'Amazon Web Services',
-      year: 'Julio 2026',
-      color: '#00c3ff',
-      icon: '☁️',
-      file: null,
-      credlyId: '587433a0-2c21-43bf-8cd2-70b43c663b2c',
-    },
-    {
-      title: 'Lic. en Física y Matemáticas',
-      org: 'IPN — Escuela Superior de Física y Matemáticas',
-      year: 'Diciembre 2024',
-      color: '#00c3ff',
-      icon: '🎓',
-      file: '/certs/certificado-esfm-ipn.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Carta de Pasante',
-      org: 'Instituto Politécnico Nacional',
-      year: 'Febrero 2026',
-      color: '#c800ff',
-      icon: '📜',
-      file: '/certs/carta-pasante-ipn.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Voluntaria IEEE SSCI 2023',
-      org: 'IEEE — Symposium Series on Computational Intelligence',
-      year: 'Diciembre 2023',
-      color: '#ff2d9b',
-      icon: '🏅',
-      file: '/certs/ieee-ssci-volunteer.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Fundamentos de Desarrollo de Software',
-      org: 'INFOTEC — Gobierno de México',
-      year: 'Marzo 2026',
-      color: '#00ff9f',
-      icon: '💻',
-      file: '/certs/fundamentos-dev-software.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Control de Versiones GIT',
-      org: 'Agencia Digital de Innovación Pública — CDMX',
-      year: 'Febrero 2026',
-      color: '#c800ff',
-      icon: '🔧',
-      file: '/certs/control-versiones-git.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Módulo I — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Marzo 2026',
-      color: '#00c3ff',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-i.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Módulo II — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Abril 2026',
-      color: '#ff2d9b',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-ii.pdf',
-      credlyId: null,
-    },
-    {
-      title: 'Módulo III — Gestión de Proyectos',
-      org: 'Escuela de Código — CDMX',
-      year: 'Mayo 2026',
-      color: '#00ff9f',
-      icon: '📊',
-      file: '/certs/modulo-gestion-proyectos.pdf',
-      credlyId: null,
-    },
+    { title: 'CCST Cybersecurity', org: 'Cisco', year: 'Julio 2024', color: '#00ff9f', icon: '🛡️' },
+    { title: 'AWS Cloud Practitioner', org: 'Amazon Web Services', year: 'Julio 2026', color: '#00c3ff', icon: '☁️' },
+    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
+    { title: 'Voluntaria IEEE SSCI', org: 'IEEE', year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅' },
+    { title: 'Ingeniería de Software', org: 'Escuela de Código CDMX', year: '2026', color: '#c800ff', icon: '💻' },
+    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2025', color: '#ff2d9b', icon: '⏳', dashed: true },
   ]
 
   return (
-    <div style={styles.page}>
-      <div style={styles.header}>
-        <button style={styles.back} onClick={() => navigate('/')}>
-          ← volver
-        </button>
-        <span style={styles.title}>◈ CERTIFICACIONES & DIPLOMAS</span>
+    <section id="certificaciones" style={styles.section}>
+
+      <div style={styles.secHead}>
+        <span style={styles.secNum}>[03]</span>
+        <span style={styles.secTitle}>{t('sections.certifications')}</span>
+        <div style={styles.secLine}></div>
       </div>
 
-      <div style={styles.grid}>
-        {certs.map((cert, i) => (
-          <div key={i} style={{ ...styles.card, borderColor: cert.color }}>
-            <div style={styles.iconRow}>
-              <span style={styles.icon}>{cert.icon}</span>
-              <span style={{ ...styles.certYear, color: cert.color }}>{cert.year}</span>
+      <p style={styles.hint}>▸ {t('certs.clickhint')}</p>
+
+      <div
+        onClick={() => navigate('/certificaciones')}
+        style={{ cursor: 'pointer' }}
+      >
+        <div style={styles.grid}>
+          {certs.map((cert, i) => (
+            <div
+              key={i}
+              style={{
+                ...styles.card,
+                borderColor: '#1a0028',
+                borderStyle: cert.dashed ? 'dashed' : 'solid',
+                opacity: cert.dashed ? 0.7 : 1,
+              }}
+            >
+              <div style={styles.icon}>{cert.icon}</div>
+              <p style={styles.certTitle}>{cert.title}</p>
+              <p style={{ ...styles.certOrg, color: cert.color }}>{cert.org}</p>
+              <p style={styles.certYear}>{cert.year}</p>
             </div>
-            <p style={{ ...styles.certTitle, color: cert.color }}>{cert.title}</p>
-            <p style={styles.certOrg}>{cert.org}</p>
-
-            {cert.credlyId && (
-              <div style={styles.credlyContainer}>
-                <div
-                  data-iframe-width="150"
-                  data-iframe-height="270"
-                  data-share-badge-id={cert.credlyId}
-                  data-share-badge-host="https://www.credly.com"
-                ></div>
-              </div>
-            )}
-
-            {cert.file && (
-              <a
-                href={cert.file}
-                target="_blank"
-                rel="noreferrer"
-                style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
-              >
-                Ver certificado ↗
-              </a>
-            )}
-
-            {cert.credlyId && (
-              <a
-                href={`https://www.credly.com/badges/${cert.credlyId}`}
-                target="_blank"
-                rel="noreferrer"
-                style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
-              >
-                Ver en Credly ↗
-              </a>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+
+      <p style={styles.note}>{t('certs.note')}</p>
+
+    </section>
   )
 }
 
 const styles = {
-  page: {
-    background: '#05020f',
-    minHeight: '100vh',
-    padding: '1.5rem',
-    paddingTop: '5rem',
+  section: {
+    padding: '1.4rem 1.5rem',
+    borderBottom: '1px solid #100018',
     fontFamily: "'Share Tech Mono', monospace",
-    color: '#e0e0ff',
   },
-  header: {
+  secHead: {
     display: 'flex',
     alignItems: 'center',
-    gap: '1rem',
-    marginBottom: '2rem',
-    borderBottom: '1px solid #2a003a',
-    paddingBottom: '1rem',
+    gap: '8px',
+    marginBottom: '0.8rem',
   },
-  back: {
-    background: 'transparent',
-    border: '1px solid #ff2d9b',
-    color: '#ff2d9b',
-    padding: '6px 12px',
-    borderRadius: '3px',
-    cursor: 'pointer',
-    fontFamily: "'Share Tech Mono', monospace",
-    fontSize: '13px',
-  },
-  title: {
+  secNum: { fontSize: '13px', color: '#ff2d9b' },
+  secTitle: {
     fontFamily: "'Orbitron', monospace",
-    fontSize: '13px',
+    fontSize: '11px',
     fontWeight: '700',
+    letterSpacing: '0.1em',
+    color: '#00c3ff',
+  },
+  secLine: {
+    flex: '1',
+    height: '1px',
+    background: 'linear-gradient(to right, #2a003a, transparent)',
+  },
+  hint: {
+    fontSize: '13px',
     color: '#c800ff',
+    margin: '0 0 1rem',
   },
   grid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-    gap: '16px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+    gap: '10px',
   },
   card: {
-    background: '#08010f',
+    background: '#06010f',
     border: '1px solid',
-    borderRadius: '8px',
-    padding: '1.2rem',
+    borderRadius: '6px',
+    padding: '0.9rem 1rem',
     transition: 'box-shadow 0.2s',
   },
-  iconRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: '8px',
-  },
-  icon: { fontSize: '22px' },
-  certTitle: {
-    fontFamily: "'Orbitron', monospace",
-    fontSize: '13px',
-    fontWeight: '700',
-    margin: '0 0 6px',
-    lineHeight: '1.3',
-  },
-  certOrg: {
-    fontSize: '11px',
-    color: '#8a7a9a',
-    margin: '0 0 1rem',
-    lineHeight: '1.4',
-  },
-  certYear: {
-    fontSize: '11px',
-    fontWeight: '700',
-  },
-  credlyContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    margin: '1rem 0',
-  },
-  viewBtn: {
-    fontSize: '11px',
-    border: '1px solid',
-    borderRadius: '3px',
-    padding: '6px 12px',
-    textDecoration: 'none',
-    display: 'inline-block',
-    marginTop: '8px',
-  },
+  icon: { fontSize: '20px', marginBottom: '6px' },
+  certTitle: { fontSize: '11px', color: '#ddd', margin: '0 0 3px', lineHeight: '1.3' },
+  certOrg:   { fontSize: '10px', margin: '0 0 2px' },
+  certYear:  { fontSize: '10px', color: '#5a4a6a', margin: '0' },
+  note: { fontSize: '13px', color: '#5a4a6a', marginTop: '1rem' },
 }
 
-export default CertificationsPage
+export default Certifications
