@@ -78,6 +78,14 @@ function CertificationsPage() {
       icon: '📊',
       file: '/certs/modulo-gestion-proyectos.pdf',
     },
+    {
+      title: 'AWS Cloud Practitioner',
+      org: 'Amazon Web Services',
+      year: 'Julio 2026',
+      color: '#00c3ff',
+      icon: '☁️',
+      link: 'https://www.credly.com/badges/587433a0-2c21-43bf-8cd2-70b43c663b2c/public_url',
+    },
   ]
 
   return (
