@@ -1,111 +1,19 @@
-import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
 function CertificationsPage() {
-  const { t } = useTranslation()
   const navigate = useNavigate()
 
   const certs = [
-    {
-      title: 'CCST Cybersecurity',
-      org: 'Cisco Certified Support Technician',
-      year: 'Julio 2024',
-      color: '#00ff9f',
-      icon: '🛡️',
-      file: '/certs/ccst-cisco.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'AWS Cloud Practitioner',
-      org: 'Amazon Web Services',
-      year: 'Julio 2026',
-      color: '#00c3ff',
-      icon: '☁️',
-      file: null,
-      credlyUrl: 'https://www.credly.com/badges/587433a0-2c21-43bf-8cd2-70b43c663b2c/public_url',
-      credlyImg: 'https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png',
-    },
-    {
-      title: 'Lic. en Física y Matemáticas',
-      org: 'IPN — Escuela Superior de Física y Matemáticas',
-      year: 'Diciembre 2024',
-      color: '#00c3ff',
-      icon: '🎓',
-      file: '/certs/certificado-esfm-ipn.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Carta de Pasante',
-      org: 'Instituto Politécnico Nacional',
-      year: 'Febrero 2026',
-      color: '#c800ff',
-      icon: '📜',
-      file: '/certs/carta-pasante-ipn.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Voluntaria IEEE SSCI 2023',
-      org: 'IEEE — Symposium Series on Computational Intelligence',
-      year: 'Diciembre 2023',
-      color: '#ff2d9b',
-      icon: '🏅',
-      file: '/certs/ieee-ssci-volunteer.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Fundamentos de Desarrollo de Software',
-      org: 'INFOTEC — Gobierno de México',
-      year: 'Marzo 2026',
-      color: '#00ff9f',
-      icon: '💻',
-      file: '/certs/fundamentos-dev-software.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Control de Versiones GIT',
-      org: 'Agencia Digital de Innovación Pública — CDMX',
-      year: 'Febrero 2026',
-      color: '#c800ff',
-      icon: '🔧',
-      file: '/certs/control-versiones-git.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Módulo I — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Marzo 2026',
-      color: '#00c3ff',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-i.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Módulo II — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Abril 2026',
-      color: '#ff2d9b',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-ii.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
-    {
-      title: 'Módulo III — Gestión de Proyectos',
-      org: 'Escuela de Código — CDMX',
-      year: 'Mayo 2026',
-      color: '#00ff9f',
-      icon: '📊',
-      file: '/certs/modulo-gestion-proyectos.pdf',
-      credlyUrl: null,
-      credlyImg: null,
-    },
+    { title: 'CCST Cybersecurity', org: 'Cisco Certified Support Technician', year: 'Julio 2024', color: '#00ff9f', icon: '🛡️', link: '/certs/ccst-cisco.pdf' },
+    { title: 'AWS Cloud Practitioner', org: 'Amazon Web Services', year: 'Julio 2026', color: '#00c3ff', icon: '☁️', link: 'https://www.credly.com/badges/587433a0-2c21-43bf-8cd2-70b43c663b2c/public_url' },
+    { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓', link: '/certs/certificado-esfm-ipn.pdf' },
+    { title: 'Carta de Pasante', org: 'Instituto Politécnico Nacional', year: 'Febrero 2026', color: '#c800ff', icon: '📜', link: '/certs/carta-pasante-ipn.pdf' },
+    { title: 'Voluntaria IEEE SSCI 2023', org: 'IEEE — Symposium on Computational Intelligence', year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅', link: '/certs/ieee-ssci-volunteer.pdf' },
+    { title: 'Fundamentos de Desarrollo de Software', org: 'INFOTEC — Gobierno de México', year: 'Marzo 2026', color: '#00ff9f', icon: '💻', link: '/certs/fundamentos-dev-software.pdf' },
+    { title: 'Control de Versiones GIT', org: 'Agencia Digital de Innovación Pública — CDMX', year: 'Febrero 2026', color: '#c800ff', icon: '🔧', link: '/certs/control-versiones-git.pdf' },
+    { title: 'Módulo I — Ingeniería de Software', org: 'Escuela de Código — CDMX', year: 'Marzo 2026', color: '#00c3ff', icon: '⚙️', link: '/certs/modulo-ingenieria-software-i.pdf' },
+    { title: 'Módulo II — Ingeniería de Software', org: 'Escuela de Código — CDMX', year: 'Abril 2026', color: '#ff2d9b', icon: '⚙️', link: '/certs/modulo-ingenieria-software-ii.pdf' },
+    { title: 'Módulo III — Gestión de Proyectos', org: 'Escuela de Código — CDMX', year: 'Mayo 2026', color: '#00ff9f', icon: '📊', link: '/certs/modulo-gestion-proyectos.pdf' },
   ]
 
   return (
@@ -119,46 +27,23 @@ function CertificationsPage() {
 
       <div style={styles.grid}>
         {certs.map((cert, i) => (
-          <div key={i} style={{ ...styles.card, borderColor: cert.color }}>
+          <a
+            key={i}
+            href={cert.link}
+            target="_blank"
+            rel="noreferrer"
+            style={{ ...styles.card, borderColor: cert.color, textDecoration: 'none' }}
+          >
             <div style={styles.iconRow}>
               <span style={styles.icon}>{cert.icon}</span>
-              <span style={{ ...styles.certYear, color: cert.color }}>{cert.year}</span>
+              <span style={{ fontSize: '11px', fontWeight: '700', color: cert.color }}>{cert.year}</span>
             </div>
-            <p style={{ ...styles.certTitle, color: cert.color }}>{cert.title}</p>
-            <p style={styles.certOrg}>{cert.org}</p>
-
-            {cert.credlyImg && (
-              <div style={styles.credlyContainer}>
-                <img
-                  src={cert.credlyImg}
-                  alt={cert.title}
-                  style={{ width: '150px', height: '150px', objectFit: 'contain' }}
-                />
-              </div>
-            )}
-
-            {cert.file && (
-              <a
-                href={cert.file}
-                target="_blank"
-                rel="noreferrer"
-                style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
-              >
-                Ver certificado ↗
-              </a>
-            )}
-
-            {cert.credlyUrl && (
-              <a
-                href={cert.credlyUrl}
-                target="_blank"
-                rel="noreferrer"
-                style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
-              >
-                Ver insignia en Credly ↗
-              </a>
-            )}
-          </div>
+            <span style={{ ...styles.certTitle, color: cert.color, display: 'block' }}>{cert.title}</span>
+            <span style={{ ...styles.certOrg, display: 'block' }}>{cert.org}</span>
+            <span style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}>
+              Ver certificado ↗
+            </span>
+          </a>
         ))}
       </div>
     </div>
@@ -208,6 +93,7 @@ const styles = {
     border: '1px solid',
     borderRadius: '8px',
     padding: '1.2rem',
+    display: 'block',
     transition: 'box-shadow 0.2s',
   },
   iconRow: {
@@ -230,21 +116,11 @@ const styles = {
     margin: '0 0 1rem',
     lineHeight: '1.4',
   },
-  certYear: {
-    fontSize: '11px',
-    fontWeight: '700',
-  },
-  credlyContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    margin: '1rem 0',
-  },
   viewBtn: {
     fontSize: '11px',
     border: '1px solid',
     borderRadius: '3px',
     padding: '6px 12px',
-    textDecoration: 'none',
     display: 'inline-block',
     marginTop: '8px',
   },
