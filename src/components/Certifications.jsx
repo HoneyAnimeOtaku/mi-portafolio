@@ -11,7 +11,7 @@ function Certifications() {
     { title: 'Lic. en Física y Matemáticas', org: 'IPN — ESFM', year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓' },
     { title: 'Ingeniería de Software', org: 'Escuela de Código CDMX', year: '2026', color: '#c800ff', icon: '💻' },
     { title: 'Control de Versiones GIT', org: 'Agencia Digital CDMX', year: '2026', color: '#00ff9f', icon: '🔧' },
-    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2025', color: '#ff2d9b', icon: '⏳', dashed: true },
+    { title: t('certs.inprogress.title'), org: t('certs.inprogress.org'), year: '2026', color: '#ff2d9b', icon: '⏳', dashed: true },
   ]
 
   return (
