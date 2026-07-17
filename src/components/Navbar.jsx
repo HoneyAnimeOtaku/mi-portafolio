@@ -7,12 +7,16 @@ function Navbar() {
     i18n.changeLanguage(lang)
   }
 
-  function scrollTo(id) {
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
-    }
+function scrollTo(id) {
+  if (window.location.pathname !== '/') {
+    window.location.href = '/#' + id
+    return
   }
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 
   return (
     <nav style={styles.nav}>
