@@ -9,7 +9,7 @@
     "prompt": "$ whoami --verbose",
     "subtitle": "FÍSICA · MATEMÁTICA · CRIPTOGRAFÍA · IA · CIBERSEGURIDAD",
     "institution": "IPN — Escuela Superior de Física y Matemáticas (ESFM)",
-    "description": "Investigo en la intersección de la criptografía post-cuántica, la inteligencia artificial y la ciberseguridad. Física matemática de formación, ingeniera de software por vocación.",
+    "description": "Investigo en la intersección de la criptografía post-cuántica, la inteligencia artificial y la ciberseguridad. Física matemática de formación, ingeniera de software por vocación. Busco mi primera oportunidad formal para aplicar ciencia de frontera a problemas reales.",
     "available": "disponible inmediatamente"
   },
   "pills": {
@@ -18,70 +18,86 @@
     "physics": "Física cuántica",
     "dev": "Dev Software"
   },
+  "sections": {
+    "projects": "PROYECTOS",
+    "experience": "EXPERIENCIA",
+    "certifications": "CERTIFICACIONES & DIPLOMAS",
+    "skills": "HABILIDADES TÉCNICAS",
+    "contact": "CONTACTO"
+  },
   "projects": {
-  "soon": "PRÓXIMO",
-  "p1": { "desc": "Proyecto desarrollado durante la licenciatura en la ESFM — IPN. Programa para elegir especialidad de la carrera" },
-  "p2": { "title": "Protocolo post-cuántico", "desc": "Esquema resistente a ataques cuánticos basado en retículas." },
-  "p3": { "title": "IA en ciberseguridad", "desc": "Detección de anomalías en redes con modelos de aprendizaje profundo." },
-  "p4": { "title": "Infraestructura segura en cloud", "desc": "Arquitectura zero-trust con cifrado end-to-end." }
-},
-"experience": {
-  "e1": {
-    "role": "Analista de IA (Freelance)",
-    "org": "Outlier",
-    "date": "2025 · Actualidad",
-    "desc": "Especializada en evaluación y optimización de modelos de IA y LLMs, realizando análisis de errores, adversarial testing, prompt engineering y validación de sistemas multimodales para mejorar métricas de calidad y robustez."
+    "soon": "PRÓXIMO",
+    "p1": { "desc": "Proyecto desarrollado durante la licenciatura en la ESFM — IPN. Base para futuras investigaciones en criptografía aplicada." },
+    "p2": { "title": "Protocolo post-cuántico", "desc": "Esquema resistente a ataques cuánticos basado en retículas." },
+    "p3": { "title": "IA en ciberseguridad", "desc": "Detección de anomalías en redes con modelos de aprendizaje profundo." },
+    "p4": { "title": "Infraestructura segura en cloud", "desc": "Arquitectura zero-trust con cifrado end-to-end." }
   },
-  "e2": {
-    "role": "Investigadora en Procesamiento de Lenguaje Natural — Servicio Social",
-    "org": "IPN — Centro de Investigación en Computación (CIC)",
-    "date": "2024 · Ciudad de México",
-    "desc": "Apoyo en proyectos de NLP mediante preprocesamiento de datos, análisis exploratorio, preparación de datasets, evaluación de modelos de machine learning y documentación de experimentos."
+  "experience": {
+    "e1": {
+      "role": "Analista de IA (Freelance)",
+      "org": "Outlier",
+      "date": "2025 · Actualidad",
+      "desc": "Especializada en evaluación y optimización de modelos de IA y LLMs, realizando análisis de errores, adversarial testing, prompt engineering y validación de sistemas multimodales para mejorar métricas de calidad y robustez."
+    },
+    "e2": {
+      "role": "Investigadora en Procesamiento de Lenguaje Natural — Servicio Social",
+      "org": "IPN — Centro de Investigación en Computación (CIC)",
+      "date": "2024 · Ciudad de México",
+      "desc": "Apoyo en proyectos de NLP mediante preprocesamiento de datos, análisis exploratorio, preparación de datasets, evaluación de modelos de machine learning y documentación de experimentos."
+    },
+    "e3": {
+      "role": "▶ Buscando primera oportunidad formal",
+      "org": "Abierta a investigación · industria · academia",
+      "date": "2025 · disponible inmediatamente",
+      "desc": "Roles de interés: ingeniera de seguridad, investigadora aplicada, científica de datos, posición académica en criptografía o IA."
+    }
   },
-  "e3": {
-    "role": "▶ Buscando primera oportunidad formal",
-    "org": "Abierta a investigación · industria · academia",
-    "date": "2025 · disponible inmediatamente",
-    "desc": "Roles de interés: ingeniera de seguridad, investigadora aplicada, científica de datos, posición académica en criptografía o IA."
+  "certs": {
+    "more": { "title": "Más certificaciones", "org": "Ver diplomas e imágenes", "year": "Próximamente" },
+    "inprogress": { "title": "Certificaciones en curso", "org": "En progreso" },
+    "degree": { "title": "Lic. en Física Matemática" },
+    "note": "▸ Diplomas y certificados disponibles en PDF e imagen en la versión completa del sitio.",
+    "clickhint": "Haz clic para ver todos los diplomas y certificados en PDF",
+    "viewCert": "Ver certificado ↗",
+    "viewCredy": "Ver insignia en Credly ↗",
+    "back": "← volver",
+    "pageTitle": "CERTIFICACIONES & DIPLOMAS",
+    "items": {
+      "ccst":    { "title": "CCST Cybersecurity",                    "org": "Cisco Certified Support Technician" },
+      "aws":     { "title": "AWS Cloud Practitioner",                "org": "Amazon Web Services" },
+      "lic":     { "title": "Lic. en Física y Matemáticas",          "org": "IPN — Escuela Superior de Física y Matemáticas" },
+      "pasante": { "title": "Carta de Pasante",                      "org": "Instituto Politécnico Nacional" },
+      "ieee":    { "title": "Voluntaria IEEE SSCI 2023",             "org": "IEEE — Symposium Series on Computational Intelligence" },
+      "dev":     { "title": "Fundamentos de Desarrollo de Software", "org": "INFOTEC — Gobierno de México" },
+      "git":     { "title": "Control de Versiones GIT",              "org": "Agencia Digital de Innovación Pública — CDMX" },
+      "mod1":    { "title": "Módulo I — Ingeniería de Software",     "org": "Escuela de Código — CDMX" },
+      "mod2":    { "title": "Módulo II — Ingeniería de Software",    "org": "Escuela de Código — CDMX" },
+      "mod3":    { "title": "Módulo III — Gestión de Proyectos",     "org": "Escuela de Código — CDMX" }
+    }
+  },
+  "skills": {
+    "languages": "LENGUAJES",
+    "crypto":    "CRIPTOGRAFÍA",
+    "math":      "MATEMÁTICAS",
+    "security":  "SEGURIDAD",
+    "linear":    "Álgebra lineal",
+    "groups":    "T. de grupos",
+    "calculus":  "Cálculo"
+  },
+  "games": {
+    "title": "JUEGOS",
+    "dino":       "🦕 Dinosaurio",
+    "go":         "⚪ Go",
+    "chess":      "♞ Ajedrez",
+    "dino_desc":  "Juego en desarrollo — próximamente disponible",
+    "dino_code":  "// TODO: implementar física del salto",
+    "go_desc":    "Tablero de Go en desarrollo",
+    "go_code":    "// TODO: implementar reglas de captura",
+    "chess_desc": "Motor de ajedrez en desarrollo",
+    "chess_code": "// TODO: implementar movimientos legales"
+  },
+  "contact": {
+    "title": "CONTACTO",
+    "sub": "Abierta a colaboraciones, investigación y oportunidades laborales"
   }
-},
-"certs": {
-  "more":       { "title": "Más certificaciones", "org": "Ver diplomas e imágenes", "year": "Próximamente" },
-  "inprogress": { "title": "Certificaciones en curso", "org": "En progreso" },
-  "degree":     { "title": "Lic. en Física Matemática" },
-  "note": "▸ Diplomas y certificados disponibles en PDF e imagen en la versión completa del sitio.",
-  "clickhint": "Haz clic para ver todos los diplomas y certificados en PDF"
-},
-"skills": {
-  "languages": "LENGUAJES",
-  "crypto":    "CRIPTOGRAFÍA",
-  "math":      "MATEMÁTICAS",
-  "security":  "SEGURIDAD",
-  "linear":    "Álgebra lineal",
-  "groups":    "T. de grupos",
-  "calculus":  "Cálculo"
-},
-"contact": {
-  "title": "CONTACTO",
-  "sub": "Abierta a colaboraciones, investigación y oportunidades laborales"
-},
-"games": {
-  "title": "JUEGOS",
-  "dino": "🦕 Dinosaurio",
-  "go": "⚪ Go",
-  "chess": "♞ Ajedrez",
-  "dino_desc": "Juego en desarrollo — próximamente disponible",
-  "dino_code": "// TODO: implementar física del salto",
-  "go_desc": "Tablero de Go en desarrollo",
-  "go_code": "// TODO: implementar reglas de captura",
-  "chess_desc": "Motor de ajedrez en desarrollo",
-  "chess_code": "// TODO: implementar movimientos legales"
-},
-"sections": {
-  "projects": "PROYECTOS",
-  "experience": "EXPERIENCIA",
-  "certifications": "CERTIFICACIONES & DIPLOMAS",
-  "skills": "HABILIDADES TÉCNICAS",
-  "contact": "CONTACTO"
-}
 }

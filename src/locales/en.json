@@ -9,7 +9,7 @@
     "prompt": "$ whoami --verbose",
     "subtitle": "PHYSICS · MATHEMATICS · CRYPTOGRAPHY · AI · CYBERSECURITY",
     "institution": "IPN — School of Physics and Mathematics (ESFM)",
-    "description": "I research at the intersection of post-quantum cryptography, artificial intelligence, and cybersecurity. Mathematical physicist by training, software engineer by vocation.",
+    "description": "I research at the intersection of post-quantum cryptography, artificial intelligence, and cybersecurity. Mathematical physicist by training, software engineer by vocation. Seeking my first formal opportunity to apply frontier science to real-world problems.",
     "available": "immediately available"
   },
   "pills": {
@@ -18,70 +18,86 @@
     "physics": "Quantum physics",
     "dev": "Software Dev"
   },
+  "sections": {
+    "projects": "PROJECTS",
+    "experience": "EXPERIENCE",
+    "certifications": "CERTIFICATIONS & DIPLOMAS",
+    "skills": "TECHNICAL SKILLS",
+    "contact": "CONTACT"
+  },
   "projects": {
-  "soon": "COMING SOON",
-  "p1": { "desc": "Project developed during my undergraduate studies at ESFM — IPN. Application for selecting an academic specialization within the degree program." },
-  "p2": { "title": "Post-quantum protocol", "desc": "Quantum-resistant scheme based on lattice cryptography." },
-  "p3": { "title": "AI in cybersecurity", "desc": "Network anomaly detection using deep learning models." },
-  "p4": { "title": "Secure cloud infrastructure", "desc": "Zero-trust architecture with end-to-end encryption." }
-},
-"experience": {
-  "e1": {
-    "role": "AI Analyst (Freelance)",
-    "org": "Independent",
-    "date": "2025 · Present",
-    "desc": "Specialized in evaluation and optimization of AI models and LLMs, performing error analysis, adversarial testing, prompt engineering and multimodal system validation to improve quality and robustness metrics."
+    "soon": "COMING SOON",
+    "p1": { "desc": "Project developed during undergrad at ESFM — IPN. Foundation for future research in applied cryptography." },
+    "p2": { "title": "Post-quantum protocol",        "desc": "Quantum-resistant scheme based on lattice cryptography." },
+    "p3": { "title": "AI in cybersecurity",          "desc": "Network anomaly detection using deep learning models." },
+    "p4": { "title": "Secure cloud infrastructure",  "desc": "Zero-trust architecture with end-to-end encryption." }
   },
-  "e2": {
-    "role": "Natural Language Processing Researcher — Social Service",
-    "org": "IPN — Center for Computing Research (CIC)",
-    "date": "2024 · Mexico City",
-    "desc": "Support in NLP projects through data preprocessing, exploratory analysis, dataset preparation, machine learning model evaluation and experiment documentation."
+  "experience": {
+    "e1": {
+      "role": "AI Analyst (Freelance)",
+      "org": "Outlier",
+      "date": "2025 · Present",
+      "desc": "Specialized in evaluation and optimization of AI models and LLMs, performing error analysis, adversarial testing, prompt engineering and multimodal system validation to improve quality and robustness metrics."
+    },
+    "e2": {
+      "role": "Natural Language Processing Researcher — Social Service",
+      "org": "IPN — Center for Computing Research (CIC)",
+      "date": "2024 · Mexico City",
+      "desc": "Support in NLP projects through data preprocessing, exploratory analysis, dataset preparation, machine learning model evaluation and experiment documentation."
+    },
+    "e3": {
+      "role": "▶ Seeking first formal position",
+      "org": "Open to research · industry · academia",
+      "date": "2025 · immediately available",
+      "desc": "Roles of interest: security engineer, applied researcher, data scientist, academic position in cryptography or AI."
+    }
   },
-  "e3": {
-    "role": "▶ Seeking first formal position",
-    "org": "Open to research · industry · academia",
-    "date": "2025 · immediately available",
-    "desc": "Roles of interest: security engineer, applied researcher, data scientist, academic position in cryptography or AI."
+  "certs": {
+    "more": { "title": "More certifications", "org": "See diplomas & images", "year": "Coming soon" },
+    "inprogress": { "title": "Certifications in progress", "org": "In progress" },
+    "degree": { "title": "B.Sc. in Mathematical Physics" },
+    "note": "▸ Diplomas and certificates available as PDF and images in the full site.",
+    "clickhint": "Click to view all diplomas and certificates in PDF",
+    "viewCert": "View certificate ↗",
+    "viewCredy": "View badge on Credly ↗",
+    "back": "← back",
+    "pageTitle": "CERTIFICATIONS & DIPLOMAS",
+    "items": {
+      "ccst":    { "title": "CCST Cybersecurity",                    "org": "Cisco Certified Support Technician" },
+      "aws":     { "title": "AWS Cloud Practitioner",                "org": "Amazon Web Services" },
+      "lic":     { "title": "B.Sc. in Mathematical Physics",         "org": "IPN — School of Physics and Mathematics" },
+      "pasante": { "title": "Graduate Certificate",                  "org": "Instituto Politécnico Nacional" },
+      "ieee":    { "title": "IEEE SSCI 2023 Volunteer",              "org": "IEEE — Symposium Series on Computational Intelligence" },
+      "dev":     { "title": "Software Development Fundamentals",     "org": "INFOTEC — Mexican Government" },
+      "git":     { "title": "GIT Version Control",                   "org": "Digital Innovation Agency — CDMX" },
+      "mod1":    { "title": "Module I — Software Engineering",       "org": "Code School — CDMX" },
+      "mod2":    { "title": "Module II — Software Engineering",      "org": "Code School — CDMX" },
+      "mod3":    { "title": "Module III — Project Management",       "org": "Code School — CDMX" }
+    }
+  },
+  "skills": {
+    "languages": "LANGUAGES",
+    "crypto":    "CRYPTOGRAPHY",
+    "math":      "MATHEMATICS",
+    "security":  "SECURITY",
+    "linear":    "Linear algebra",
+    "groups":    "Group theory",
+    "calculus":  "Calculus"
+  },
+  "games": {
+    "title": "GAMES",
+    "dino":       "🦕 Dinosaur",
+    "go":         "⚪ Go",
+    "chess":      "♞ Chess",
+    "dino_desc":  "Game in development — coming soon",
+    "dino_code":  "// TODO: implement jump physics",
+    "go_desc":    "Go board in development",
+    "go_code":    "// TODO: implement capture rules",
+    "chess_desc": "Chess engine in development",
+    "chess_code": "// TODO: implement legal moves"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "sub": "Open to collaborations, research and job opportunities"
   }
-},
-"certs": {
-  "more":       { "title": "More certifications", "org": "See diplomas & images", "year": "Coming soon" },
-  "inprogress": { "title": "Certifications in progress", "org": "In progress" },
-  "degree":     { "title": "B.Sc. in Mathematical Physics" },
-  "note": "▸ Diplomas and certificates available as PDF and images in the full site.",
-  "clickhint": "Click to view all diplomas and certificates in PDF"
-},
-"skills": {
-  "languages": "LANGUAGES",
-  "crypto":    "CRYPTOGRAPHY",
-  "math":      "MATHEMATICS",
-  "security":  "SECURITY",
-  "linear":    "Linear algebra",
-  "groups":    "Group theory",
-  "calculus":  "Calculus"
-},
-"contact": {
-  "title": "CONTACT",
-  "sub": "Open to collaborations, research and job opportunities"
-},
-"games": {
-  "title": "GAMES",
-  "dino": "🦕 Dinosaur",
-  "go": "⚪ Go",
-  "chess": "♞ Chess",
-  "dino_desc": "Game in development — coming soon",
-  "dino_code": "// TODO: implement jump physics",
-  "go_desc": "Go board in development",
-  "go_code": "// TODO: implement capture rules",
-  "chess_desc": "Chess engine in development",
-  "chess_code": "// TODO: implement legal moves"
-},
-"sections": {
-  "projects": "PROJECTS",
-  "experience": "EXPERIENCE",
-  "certifications": "CERTIFICATIONS & DIPLOMAS",
-  "skills": "TECHNICAL SKILLS",
-  "contact": "CONTACT"
-}
 }

@@ -6,95 +6,25 @@ function CertificationsPage() {
   const navigate = useNavigate()
 
   const certs = [
-    {
-      title: 'CCST Cybersecurity',
-      org: 'Cisco Certified Support Technician',
-      year: 'Julio 2024',
-      color: '#00ff9f',
-      icon: '🛡️',
-      link: 'https://www.credly.com/badges/f86f7532-78c2-4746-9d72-929ee49946fe/public_url',
-    },
-    {
-      title: 'Lic. en Física y Matemáticas',
-      org: 'IPN — Escuela Superior de Física y Matemáticas',
-      year: 'Diciembre 2024',
-      color: '#00c3ff',
-      icon: '🎓',
-      file: '/certs/certificado-esfm-ipn.pdf',
-    },
-    {
-      title: 'Carta de Pasante',
-      org: 'Instituto Politécnico Nacional',
-      year: 'Diciembre 2024',
-      color: '#c800ff',
-      icon: '📜',
-      file: '/certs/carta-pasante-ipn.pdf',
-    },
-    {
-      title: 'Voluntaria IEEE SSCI 2023',
-      org: 'IEEE — Symposium Series on Computational Intelligence',
-      year: 'Diciembre 2023',
-      color: '#ff2d9b',
-      icon: '🏅',
-      file: '/certs/ieee-ssci-volunteer.pdf',
-    },
-    {
-      title: 'Fundamentos de Desarrollo de Software',
-      org: 'INFOTEC — Gobierno de México',
-      year: 'Marzo 2026',
-      color: '#00ff9f',
-      icon: '💻',
-      file: '/certs/fundamentos-dev-software.pdf',
-    },
-    {
-      title: 'Control de Versiones GIT',
-      org: 'Agencia Digital de Innovación Pública — CDMX',
-      year: 'Febrero 2026',
-      color: '#c800ff',
-      icon: '🔧',
-      file: '/certs/control-versiones-git.pdf',
-    },
-    {
-      title: 'Módulo I — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Marzo 2026',
-      color: '#00c3ff',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-i.pdf',
-    },
-    {
-      title: 'Módulo II — Ingeniería de Software',
-      org: 'Escuela de Código — CDMX',
-      year: 'Abril 2026',
-      color: '#ff2d9b',
-      icon: '⚙️',
-      file: '/certs/modulo-ingenieria-software-ii.pdf',
-    },
-    {
-      title: 'Módulo III — Gestión de Proyectos',
-      org: 'Escuela de Código — CDMX',
-      year: 'Mayo 2026',
-      color: '#00ff9f',
-      icon: '📊',
-      file: '/certs/modulo-gestion-proyectos.pdf',
-    },
-    {
-      title: 'AWS Cloud Practitioner',
-      org: 'Amazon Web Services',
-      year: 'Julio 2026',
-      color: '#00c3ff',
-      icon: '☁️',
-      link: 'https://www.credly.com/badges/587433a0-2c21-43bf-8cd2-70b43c663b2c/public_url',
-    },
+    { key: 'ccst',    year: 'Julio 2024',     color: '#00ff9f', icon: '🛡️', file: '/certs/ccst-cisco.pdf' },
+    { key: 'aws',     year: 'Julio 2026',     color: '#00c3ff', icon: '☁️', link: 'https://www.credly.com/badges/587433a0-2c21-43bf-8cd2-70b43c663b2c/public_url' },
+    { key: 'lic',     year: 'Diciembre 2024', color: '#00c3ff', icon: '🎓', file: '/certs/certificado-esfm-ipn.pdf' },
+    { key: 'pasante', year: 'Diciembre 2024', color: '#c800ff', icon: '📜', file: '/certs/carta-pasante-ipn.pdf' },
+    { key: 'ieee',    year: 'Diciembre 2023', color: '#ff2d9b', icon: '🏅', file: '/certs/ieee-ssci-volunteer.pdf' },
+    { key: 'dev',     year: 'Marzo 2026',     color: '#00ff9f', icon: '💻', file: '/certs/fundamentos-dev-software.pdf' },
+    { key: 'git',     year: 'Febrero 2026',   color: '#c800ff', icon: '🔧', file: '/certs/control-versiones-git.pdf' },
+    { key: 'mod1',    year: 'Marzo 2026',     color: '#00c3ff', icon: '⚙️', file: '/certs/modulo-ingenieria-software-i.pdf' },
+    { key: 'mod2',    year: 'Abril 2026',     color: '#ff2d9b', icon: '⚙️', file: '/certs/modulo-ingenieria-software-ii.pdf' },
+    { key: 'mod3',    year: 'Mayo 2026',      color: '#00ff9f', icon: '📊', file: '/certs/modulo-gestion-proyectos.pdf' },
   ]
 
   return (
     <div style={styles.page}>
       <div style={styles.header}>
         <button style={styles.back} onClick={() => navigate('/')}>
-          ← volver
+          {t('certs.back')}
         </button>
-        <span style={styles.title}>◈ CERTIFICACIONES & DIPLOMAS</span>
+        <span style={styles.title}>◈ {t('certs.pageTitle')}</span>
       </div>
 
       <div style={styles.grid}>
@@ -104,15 +34,19 @@ function CertificationsPage() {
               <span style={styles.icon}>{cert.icon}</span>
               <span style={{ ...styles.certYear, color: cert.color }}>{cert.year}</span>
             </div>
-            <p style={{ ...styles.certTitle, color: cert.color }}>{cert.title}</p>
-            <p style={styles.certOrg}>{cert.org}</p>
+            <p style={{ ...styles.certTitle, color: cert.color }}>
+              {t(`certs.items.${cert.key}.title`)}
+            </p>
+            <p style={styles.certOrg}>
+              {t(`certs.items.${cert.key}.org`)}
+            </p>
             <a
               href={cert.file || cert.link}
               target="_blank"
               rel="noreferrer"
               style={{ ...styles.viewBtn, color: cert.color, borderColor: cert.color }}
             >
-              Ver certificado ↗
+              {t('certs.viewCert')}
             </a>
           </div>
         ))}
