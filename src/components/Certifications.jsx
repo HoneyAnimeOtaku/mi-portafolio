@@ -173,6 +173,7 @@ const styles = {
     background: '#05020f',
     minHeight: '100vh',
     padding: '1.5rem',
+    paddingTop: '5rem',
     fontFamily: "'Share Tech Mono', monospace",
     color: '#e0e0ff',
   },
